@@ -1,39 +1,32 @@
 @echo off
-title LAN Protector v3.2
-echo ================================
-echo    LAN PROTECTOR v3.2 - FIXED
-echo ================================
+title Minecraft Protector
+cls
+echo Minecraft LAN Protector v4.0
+echo ============================
 echo.
-
-echo Step 1: Checking Java...
-java -version
-if errorlevel 1 (
-    echo ERROR: Java not found!
+echo Features:
+echo - Blocks fake worlds
+echo - Scans suspicious ports
+echo - Colorful alerts
+echo.
+echo Checking Java...
+java -version >nul || (
+    echo Java not found!
     pause
     exit
 )
-echo.
 
-echo Step 2: Compiling fixed version...
-javac LanProtectorV3_2.java
-if errorlevel 1 (
-    echo COMPILATION ERROR!
-    echo Fix the Java file first.
+echo Compiling...
+javac LanProtectorV4.java || (
+    echo Compile error!
     pause
     exit
 )
-echo Compilation successful!
-echo.
 
-echo Step 3: Starting protection...
-echo ================================
-echo   PROGRAM OUTPUT:
-echo ================================
+echo Starting protection...
 echo.
-java LanProtectorV3_2
+java LanProtectorV4
 
 echo.
-echo ================================
-echo   PROGRAM FINISHED
-echo ================================
+echo Program finished.
 pause
