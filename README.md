@@ -2,6 +2,7 @@
 [README.md](https://github.com/user-attachments/files/24429097/README.md)
 🎮 ПОЛНЫЙ ТУТОРИАЛ ДЛЯ GITHUB: LAN PROTECTOR v3.2
 
+Для срочной остновки ctrl + c
 
 # 🛡️ LAN PROTECTOR v3.2 - Ultimate Fake Minecraft World Blocker
 
